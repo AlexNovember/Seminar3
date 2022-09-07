@@ -10,12 +10,11 @@ try
     if (number.ToString().Length != 5)
     Console.WriteLine("Введенное число не пятизначное! Введите пятизначное число!"); 
     else if (number/1000==(number%10)*10+(number/10)%10)
-        Console.WriteLine("палиндром."); 
+        Console.WriteLine("Это число палиндром");
     else 
-        Console.WriteLine("НЕ палиндром.");
+        Console.WriteLine("Это число не палиндром.");
     }
-    // return;
-catch
+    catch
 {
-    Console.WriteLine("Возникло исключение!");
+    Console.WriteLine("Вы ввели не цифры!");
 }
