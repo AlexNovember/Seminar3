@@ -2,3 +2,15 @@
 /bin
 /obj
 /Seminar3.csproj
+SEMINAR4/SEMINAR4.csproj
+.gitignore
+.gitignore
+.gitignore
+.gitignore
+.gitignore
+SEMINAR4/obj/project.assets.json
+SEMINAR4/obj/project.nuget.cache
+SEMINAR4/obj/SEMINAR4.csproj.nuget.dgspec.json
+.gitignore
+SEMINAR4/obj/SEMINAR4.csproj.nuget.g.props
+SEMINAR4/obj/SEMINAR4.csproj.nuget.g.targets
