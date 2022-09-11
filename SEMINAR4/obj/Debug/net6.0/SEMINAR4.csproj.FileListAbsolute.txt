@@ -1,0 +1,15 @@
+C:\Downloads\2\Seminar3\SEMINAR4\bin\Debug\net6.0\SEMINAR4.exe
+C:\Downloads\2\Seminar3\SEMINAR4\bin\Debug\net6.0\SEMINAR4.deps.json
+C:\Downloads\2\Seminar3\SEMINAR4\bin\Debug\net6.0\SEMINAR4.runtimeconfig.json
+C:\Downloads\2\Seminar3\SEMINAR4\bin\Debug\net6.0\SEMINAR4.dll
+C:\Downloads\2\Seminar3\SEMINAR4\bin\Debug\net6.0\SEMINAR4.pdb
+C:\Downloads\2\Seminar3\SEMINAR4\obj\Debug\net6.0\SEMINAR4.csproj.AssemblyReference.cache
+C:\Downloads\2\Seminar3\SEMINAR4\obj\Debug\net6.0\SEMINAR4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Downloads\2\Seminar3\SEMINAR4\obj\Debug\net6.0\SEMINAR4.AssemblyInfoInputs.cache
+C:\Downloads\2\Seminar3\SEMINAR4\obj\Debug\net6.0\SEMINAR4.AssemblyInfo.cs
+C:\Downloads\2\Seminar3\SEMINAR4\obj\Debug\net6.0\SEMINAR4.csproj.CoreCompileInputs.cache
+C:\Downloads\2\Seminar3\SEMINAR4\obj\Debug\net6.0\SEMINAR4.dll
+C:\Downloads\2\Seminar3\SEMINAR4\obj\Debug\net6.0\refint\SEMINAR4.dll
+C:\Downloads\2\Seminar3\SEMINAR4\obj\Debug\net6.0\SEMINAR4.pdb
+C:\Downloads\2\Seminar3\SEMINAR4\obj\Debug\net6.0\SEMINAR4.genruntimeconfig.cache
+C:\Downloads\2\Seminar3\SEMINAR4\obj\Debug\net6.0\ref\SEMINAR4.dll
