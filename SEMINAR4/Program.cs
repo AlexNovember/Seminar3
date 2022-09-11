@@ -2,55 +2,61 @@
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
-Console.Clear();
+// Console.Clear();
 
-int Exponentiation(int numberA, int numberB)
-{
-  int result = 1;
-  for(int i=1; i <= numberB; i++)
-  {
-    result = result * numberA;
-  }
-    return result;
-}
+// int Exponentiation(int numberA, int numberB)
+// {
+//   int result = 1;
+//   for(int i=1; i <= numberB; i++)
+//   {
+//     result = result * numberA;
+//   }
+//     return result;
+// }
 
-  Console.Write("Введите число A: ");
-  int numberA = Convert.ToInt32(Console.ReadLine());
-  Console.Write("Введите число B: ");
-  int numberB = Convert.ToInt32(Console.ReadLine());
+//   Console.Write("Введите число A: ");
+//   int numberA = Convert.ToInt32(Console.ReadLine());
+//   Console.Write("Введите число B: ");
+//   int numberB = Convert.ToInt32(Console.ReadLine());
 
-  int exponentiation = Exponentiation(numberA, numberB);
-  Console.WriteLine($"Степень {numberB} числа {numberA} = {exponentiation}"); 
+//   int exponentiation = Exponentiation(numberA, numberB);
+//   Console.WriteLine($"Степень {numberB} числа {numberA} = {exponentiation}"); 
   
-
-
+// Без цикла
 // Console.WriteLine("Ответ: " + Math.Pow(numberA, numberB));
+
 
 
 // Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 // 452 -> 11
 // 82 -> 10
 // 9012 -> 12
-// Console.WriteLine($"\nЗадача 27. Выдаёт сумму цифр в числе");
-// Console.Write("Введите число N: ");
-// int numberN = Convert.ToInt32(Console.ReadLine());
 
-//   int SumNumber(int numberN){
-    
-//     int counter = Convert.ToString(numberN).Length;
-//     int advance = 0;
-//     int result = 0;
 
-//     for (int i = 0; i < counter; i++){
-//       advance = numberN - numberN % 10;
-//       result = result + (numberN - advance);
-//       numberN = numberN / 10;
-//     }
-//    return result;
-//   }
+Console.Clear();
+Console.Write("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
 
-// int sumNumber = SumNumber(numberN);
-// Console.WriteLine("Сумма цифр в числе: " + sumNumber);
+  int SumNumber(int number)
+  {
+    int count = Convert.ToString(number).Length;
+    int advance = 0;
+    int summa = 0;
+
+    for (int i = 0; i < count; i++)
+    {
+      advance = number - number % 10;
+      summa = summa + (number - advance);
+      number = number / 10;
+    }
+   return summa;
+  }
+
+int sumNumber = SumNumber(number);
+Console.WriteLine("Сумма цифр данного числа = " + sumNumber);
+
+
+
 
 // // Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 // // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
