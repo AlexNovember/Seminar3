@@ -25,8 +25,6 @@
 // A (3,6,8); B (2,1,-7), -> 15.84
 // A (7,-5, 0); B (1,-1,9) -> 11.53
 
-
-
 // int x1 = Coordinate("x", "A");
 // int y1 = Coordinate("y", "A");
 // int z1 = Coordinate("z", "A");
@@ -51,39 +49,36 @@
 
 
 
-//Задача 23: Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+// Задача 23: Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
-// Console.Clear ();
-// Console.Write("Введите число: ");
-// int cube = Convert.ToInt32(Console.ReadLine());
+Console.Clear ();
+Console.Write("Введите число: ");
+int cube = Convert.ToInt32(Console.ReadLine());
 
-// void Cube(int[] cube)
-// {
-//   int counter = 0;
-//   int length = cube.Length;
-//   while (counter < length)
-//   {
-//     cube[counter] = Convert.ToInt32(Math.Pow(counter, 3));
-//     counter++;
-//   }
-// }
+void Cube(int[] cube)
+{
+  int counter = 0;
+  int length = cube.Length;
+  while (counter < length)
+  {
+    cube[counter] = Convert.ToInt32(Math.Pow(counter, 3));
+    counter++;
+  }
+}
 
-// void PrintArry(int[] coll)
-// {
-//   int count = coll.Length;
-//   int index = 1;
-//   while(index < count)
-//   {
-//     Console.WriteLine(coll[index]+ " ");
-//     index++;
-//   }
-// } 
+void PrintArry(int[] coll)
+{
+  int count = coll.Length;
+  int index = 1;
+  while(index < count)
+  {
+    Console.WriteLine(coll[index]+ " ");
+    index++;
+  }
+} 
 
-// int[] arry = new int[cube+1];
-// Cube(arry);
-// PrintArry(arry);
-
-
-
+int[] arry = new int[cube+1];
+Cube(arry);
+PrintArry(arry);
