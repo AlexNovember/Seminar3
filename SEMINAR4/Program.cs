@@ -63,7 +63,7 @@
 // // 6, 1, 33 -> [6, 1, 33]
 
 Console.Clear();
-Console.Write("Введите 8 чисел ");
+Console.Write("Введите восемь чисел ");
 string? NumbersSeries = Console.ReadLine();
 
 NumbersSeries = NumbersSeries + ",";
@@ -120,7 +120,7 @@ int[] ArrayOfNumbers(string seriesNew)
   return arrayOfNumbers;
 }
 
-void PrintArry(int[] coll)
+void PrintArray(int[] coll)
 {
   int count = coll.Length;
   int index = 0;
@@ -141,4 +141,4 @@ string seriesNew = RemovingSpaces(NumbersSeries);
 
 int[] arrayOfNumbers =  ArrayOfNumbers(seriesNew);
 
-PrintArry(arrayOfNumbers);
+PrintArray(arrayOfNumbers);
