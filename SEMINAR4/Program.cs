@@ -83,7 +83,7 @@ string RemovingSpaces (string series)
 }
 
 //  проверка на правильность ввода 
-void СheckNumber2 (int  series)
+void СheckNumber2 (int series)
 {
       if (series == '0'||series == '1'||series == '2'
       ||series == '3'||series == '4'||series == '5'||series == '6'
@@ -98,12 +98,10 @@ void СheckNumber2 (int  series)
 }
 
 // создание и заполнение массива из строки
-int[] ArrayOfNumbers(string seriesNew){ 
-
+int[] ArrayOfNumbers(string seriesNew)
+{ 
   int[] arrayOfNumbers = new int[1];    // инициализация массива из 1 элемента
-
   int j =0;
-
   for (int i = 0; i < seriesNew.Length; i++)
   {
     string seriesNew1 = "";
