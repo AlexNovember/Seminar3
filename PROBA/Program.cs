@@ -8,6 +8,7 @@
                 array[i] = new Random().Next(0, 8);
                 if (i!=7) Console.Write($"{array[i]}, ");
                 Console.Write($"{array[i]}");
+                
             }
  
         

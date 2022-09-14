@@ -21,7 +21,7 @@
 
 //   int exponentiation = Exponentiation(numberA, numberB);
 //   Console.WriteLine($"Степень {numberB} числа {numberA} = {exponentiation}"); 
-  
+
 // Без цикла
 // Console.WriteLine("Ответ: " + Math.Pow(numberA, numberB));
 
@@ -65,38 +65,28 @@
 // 3
 // 6, 1, 33 -> [6, 1, 33]
 
-// static void Main (string[] args);
-
-Console.Write("Введите количество элементов массива: ");
-
-int ElementsCount = int.Parse(Console.ReadLine());
-int [] myArray = new int [ElementsCount];
-
-for (int i = 0; i < myArray.Length; i++)
+internal class Program
 {
-  Console.Write($"Введите элемент массива под индексом {i}: ");
-  myArray[i] = int.Parse(Console.ReadLine());
+    private static void Main(string[] args)
+    {
+        Console.Clear();
+        Console.Write("Введите количество элементов массива: ");
+        int ElementsCount = int.Parse(Console.ReadLine());
+        int[] myArray = new int[ElementsCount];
+        for (int i = 0; i < myArray.Length; i++)
+        {
+            Console.Write($"Введите элемент массива под индексом ({i}): ");
+            myArray[i] = int.Parse(Console.ReadLine());
+        }
+        Console.WriteLine("Вывод массива:");
+        Console.Write("[");
+        for (int i = 0; i < myArray.Length; i++)
+        {
+            if (i!=(ElementsCount-1))
+              Console.Write($"{myArray[i]}, ");
+            else 
+              Console.Write($"{myArray[i]}");
+        }
+        Console.Write("]");
+    }
 }
-
-
-Console.WriteLine("Вывод массива");
-for (int i = 0; i < myArray.Length; i++)
-{
-  Console.Write(myArray[i]);
-}
-
-
-// int[] mas = new int[5];
-//             Console.WriteLine("\tЗаполните массив");
-//             for (int i = 0; i < mas.Length; i++)
-//             {
-//                 Console.Write("Введите значение массива [" + i + "]: ");
-//                 int numbermas = int.Parse(Console.ReadLine());
-//                 mas[i] = numbermas;
-//             }
-//             Console.WriteLine("\n");
-//             Console.Write("Массив: ");
-//             for (int i = 0; i < mas.Length; i++)
-//             {
-//                 Console.Write(mas[i] + "; ");
-//             }
