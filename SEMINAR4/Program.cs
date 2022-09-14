@@ -3,7 +3,6 @@
 // 2, 4 -> 16
 
 // Console.Clear();
-
 // int Exponentiation(int numberA, int numberB)
 // {
 //   int result = 1;
