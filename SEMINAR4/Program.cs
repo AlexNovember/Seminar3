@@ -21,8 +21,8 @@
 //   int exponentiation = Exponentiation(numberA, numberB);
 //   Console.WriteLine($"Степень {numberB} числа {numberA} = {exponentiation}"); 
 
-// Без цикла
-// Console.WriteLine("Ответ: " + Math.Pow(numberA, numberB));
+// // Без цикла
+// Console.WriteLine("Без цикла>: " + Math.Pow(numberA, numberB));
 
 
 
@@ -32,27 +32,27 @@
 // 9012 -> 12
 
 
-// Console.Clear();
-// Console.Write("Введите число: ");
-// int number = Convert.ToInt32(Console.ReadLine());
+Console.Clear();
+Console.Write("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
 
-//   int SumNumber(int number)
-//   {
-//     int count = Convert.ToString(number).Length;
-//     int advance = 0;
-//     int summa = 0;
+  int SumNumber(int number)
+  {
+    int count = Convert.ToString(number).Length;
+    int advance = 0;
+    int summa = 0;
 
-//     for (int i = 0; i < count; i++)
-//     {
-//       advance = number - number % 10;
-//       summa = summa + (number - advance);
-//       number = number / 10;
-//     }
-//    return summa;
-//   }
+    for (int i = 0; i < count; i++)
+    {
+      advance = number - number % 10;
+      summa = summa + (number - advance);
+      number = number / 10;
+    }
+   return summa;
+  }
 
-// int sumNumber = SumNumber(number);
-// Console.WriteLine("Сумма цифр данного числа = " + sumNumber);
+int sumNumber = SumNumber(number);
+Console.WriteLine("Сумма цифр данного числа = " + sumNumber);
 
 
 
@@ -64,28 +64,28 @@
 // 3
 // 6, 1, 33 -> [6, 1, 33]
 
-internal class Program
-{
-    private static void Main(string[] args)
-    {
-        Console.Clear();
-        Console.Write("Введите количество элементов массива: ");
-        int ElementsCount = int.Parse(Console.ReadLine());
-        int[] myArray = new int[ElementsCount];
-        for (int i = 0; i < myArray.Length; i++)
-        {
-            Console.Write($"Введите элемент массива под индексом ({i}): ");
-            myArray[i] = int.Parse(Console.ReadLine());
-        }
-        Console.WriteLine("Вывод массива:");
-        Console.Write("[");
-        for (int i = 0; i < myArray.Length; i++)
-        {
-            if (i!=(ElementsCount-1))
-              Console.Write($"{myArray[i]}, ");
-            else 
-              Console.Write($"{myArray[i]}");
-        }
-        Console.Write("]");
-    }
-}
+// internal class Program
+// {
+//     private static void Main(string[] args)
+//     {
+//         Console.Clear();
+//         Console.Write("Введите количество элементов массива: ");
+//         int ElementsCount = int.Parse(Console.ReadLine());
+//         int[] myArray = new int[ElementsCount];
+//         for (int i = 0; i < myArray.Length; i++)
+//         {
+//             Console.Write($"Введите элемент массива под индексом ({i}): ");
+//             myArray[i] = int.Parse(Console.ReadLine());
+//         }
+//         Console.WriteLine("Вывод массива:");
+//         Console.Write("[");
+//         for (int i = 0; i < myArray.Length; i++)
+//         {
+//             if (i!=(ElementsCount-1))
+//               Console.Write($"{myArray[i]}, ");
+//             else 
+//               Console.Write($"{myArray[i]}");
+//         }
+//         Console.Write("]");
+//     }
+// }
