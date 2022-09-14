@@ -58,87 +58,45 @@
 
 
 
-// // Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
-// // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
-// // 6, 1, 33 -> [6, 1, 33]
+// // Задача 29: Напишите программу, которая задаёт массив из N элементов и выводит их на экран. N - вводится с клавиатуры. 
+// Элементы тоже вводятся с клавиатуры.
+// 5
+// 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+// 3
+// 6, 1, 33 -> [6, 1, 33]
 
-Console.Clear();
-Console.Write("Введите восемь чисел ");
-string? NumbersSeries = Console.ReadLine();
+// static void Main (string[] args);
 
-NumbersSeries = NumbersSeries + ",";
+Console.Write("Введите количество элементов массива: ");
 
-// удаления пробелов из строки 
-string RemovingSpaces (string series)
+int ElementsCount = int.Parse(Console.ReadLine());
+int [] myArray = new int [ElementsCount];
+
+for (int i = 0; i < myArray.Length; i++)
 {
-  string seriesNew = "";
-  for (int i = 0; i < series.Length; i++)
-  {
-    if (series[i] != ' ') 
-    {
-      seriesNew += series[i];
-    }
-  }
-  return seriesNew;
+  Console.Write($"Введите элемент массива под индексом {i}: ");
+  myArray[i] = int.Parse(Console.ReadLine());
 }
 
-//  проверка на правильность ввода 
-void СheckNumber2 (int series)
-{
-      if (series == '0'||series == '1'||series == '2'
-      ||series == '3'||series == '4'||series == '5'||series == '6'
-      ||series == '7'||series == '8'||series == '9'||series == ','
-      ||series == '-')
-      {
-      }
-        else {
-          Console.WriteLine($" Введите цифры.");
 
-      }
+Console.WriteLine("Вывод массива");
+for (int i = 0; i < myArray.Length; i++)
+{
+  Console.Write(myArray[i]);
 }
 
-// создание и заполнение массива из строки
-int[] ArrayOfNumbers(string seriesNew)
-{ 
-  int[] arrayOfNumbers = new int[1];    // инициализация массива из 1 элемента
-  int j =0;
-  for (int i = 0; i < seriesNew.Length; i++)
-  {
-    string seriesNew1 = "";
-    while (seriesNew[i] != ',' && i < seriesNew.Length)
-    {
-      seriesNew1 += seriesNew[i];
-      СheckNumber2(seriesNew[i]);
-      i++;
-    }
-    arrayOfNumbers[j] = Convert.ToInt32(seriesNew1);
-    if (i < seriesNew.Length-1){
-      arrayOfNumbers = arrayOfNumbers.Concat(new int[] {0}).ToArray();    
-    }
-    j++;
-  }
-  return arrayOfNumbers;
-}
 
-void PrintArray(int[] coll)
-{
-  int count = coll.Length;
-  int index = 0;
-  Console.Write("[");
-  while(index < count)
-  {
-    Console.Write(coll[index]);
-    index++;
-    if (index < count){
-      Console.Write(", ");
-    }
-  }
-  Console.Write("]");
-} 
-
-
-string seriesNew = RemovingSpaces(NumbersSeries);
-
-int[] arrayOfNumbers =  ArrayOfNumbers(seriesNew);
-
-PrintArray(arrayOfNumbers);
+// int[] mas = new int[5];
+//             Console.WriteLine("\tЗаполните массив");
+//             for (int i = 0; i < mas.Length; i++)
+//             {
+//                 Console.Write("Введите значение массива [" + i + "]: ");
+//                 int numbermas = int.Parse(Console.ReadLine());
+//                 mas[i] = numbermas;
+//             }
+//             Console.WriteLine("\n");
+//             Console.Write("Массив: ");
+//             for (int i = 0; i < mas.Length; i++)
+//             {
+//                 Console.Write(mas[i] + "; ");
+//             }
